@@ -5,7 +5,7 @@ local lfs = require"lfs"
 
 
 --~ cd into dump parent folder 
-dump = "/Users/juwoncha/Documents/desktop_dump/"
+dump = "/Users/NAME/Documents/desktop_dump/"
 lfs.chdir(dump)
 print("cd: ",lfs.currentdir())
 
@@ -15,7 +15,7 @@ date = os.date("%Y-%m-%d"), "\n"
 lfs.mkdir(date)
 print("Success: created dump directory\n")
 
-dumphome = "/Users/juwoncha/Documents/desktop_dump/"..date
+dumphome = dump..date
 
 --~ cd into created dir
 lfs.chdir(date)
@@ -69,7 +69,7 @@ print("Success: created file format directories\n")
 
 
 --~ cd into desktop
-desktop = "/Users/juwoncha/Desktop"
+desktop = "/Users/NAME/Desktop"
 lfs.chdir(desktop)
 print("cd: ",lfs.currentdir())
 
