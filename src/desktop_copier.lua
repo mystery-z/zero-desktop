@@ -3,9 +3,13 @@ local lfs = require"lfs"
 --~ https://docs.coronalabs.com/guide/data/LFS/index.html
 --~ has better LFS documentation IMO
 
+file = io.open("conf.txt" , "r+")
+
+io.input(file)
 
 --~ cd into dump parent folder 
-dump = "/Users/NAME/Documents/desktop_dump/"
+desktop = file:read("*l")
+dump = file:read()
 lfs.chdir(dump)
 print("cd: ",lfs.currentdir())
 
@@ -69,7 +73,6 @@ print("Success: created file format directories\n")
 
 
 --~ cd into desktop
-desktop = "/Users/NAME/Desktop"
 lfs.chdir(desktop)
 print("cd: ",lfs.currentdir())
 
