@@ -1,7 +1,7 @@
 # zero-desktop
 
 ## Intro
-A program that clean your desktop by organising files by file type and putting them away in another location. 
+A program that cleans your desktop by sorting files by file type and archiving them in another location. 
 
 ## Installation
 ```
@@ -18,12 +18,10 @@ nano conf.txt
 run ```lua desktop_copier.lua``` from inside the ```/src``` folder
 
 ## Specifics:
- - creates a new folder each day, so it is recommended to run the program once everyday
+ - creates a new folder with the folder name being the date, **so it is recommended to run the program once everyday**
  - in each day's folder, 7 subfolders are created: auds, code, dirs, docs, imgs, vids and zips
  - files on the desktop are categorised and put into these folders
- - files with a formats that does not end up getting categorised gets tar-ed as "misc.tar" and gets put into the dirs folder
+ - files with a formats that does not end up getting categorised gets tar-ed as ```misc.tar``` and gets put into the dirs folder
 
- 
-  
-
-
+## Compatibility
+ - should work on MacOS and Unix-based systems, hasn't been tested on Windows yet
