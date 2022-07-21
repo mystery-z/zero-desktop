@@ -24,4 +24,4 @@ run ```lua desktop_copier.lua``` from inside the ```/src``` folder
  - files with a formats that does not end up getting categorised gets tar-ed as ```misc.tar``` and gets put into the dirs folder
 
 ## Compatibility
- - should work on MacOS and Unix-based systems, hasn't been tested on Windows yet
+ - should work on MacOS and Unix-based systems, hasn't been tested on Windows yet, but uses os.execute so probably won't work
